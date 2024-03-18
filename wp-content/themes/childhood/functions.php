@@ -17,4 +17,6 @@ function childhood_styles()
 {
     wp_enqueue_style('childhood-style', get_stylesheet_uri());
 }
+
+add_theme_support('custom-logo');
 ?>
