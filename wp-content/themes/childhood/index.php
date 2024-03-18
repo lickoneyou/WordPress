@@ -104,12 +104,12 @@
 </div>
 <div class="specialists" id="specialists">
   <div class="container">
-    <div class="title">Наша команда</div>
+    <div class="title"><?php the_field('our_team_title'); ?></div>
     <div class="row">
       <div class="col-lg-10 offset-lg-1">
-        <img class="specialists__img" src="<?= bloginfo(
-            'template_url'
-        ) ?>/assets/img/team.jpg" alt="наша команда">
+        <img class="specialists__img" src="<?php the_field(
+            'our_team_img'
+        ); ?>" alt="наша команда">
       </div>
     </div>
   </div>
