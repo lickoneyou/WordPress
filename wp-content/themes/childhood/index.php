@@ -153,29 +153,46 @@ wp_reset_postdata();
     <h2 class="subtitle">Развивающие игрушки</h2>
     <div class="toys__wrapper">
 
-      <div class="toys__item" style="background-image: url(<?= bloginfo(
-          'template_url'
-      ) ?>/assets/img/toy_7.jpg)">
+      <?php
+      // параметры по умолчанию
+      $my_posts = get_posts([
+          'numberposts' => -1,
+          'category_name' => 'edu_toys',
+          'orderby' => 'date',
+          'order' => 'ASC',
+          'include' => [],
+          'exclude' => [],
+          'meta_key' => '',
+          'meta_value' => '',
+          'post_type' => 'post',
+          'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+      ]);
+
+      global $post;
+
+      foreach ($my_posts as $post) {
+          setup_postdata($post); ?>
+<div class="toys__item" style="background-image: url(<?php if (
+    has_post_thumbnail()
+) {
+    the_post_thumbnail_url();
+} else {
+    echo get_template_directory_uri() . '/assets/img/not-found.jpg';
+} ?>)">
         <div class="toys__item-info">
-          <div class="toys__item-title">Воздушный змей</div>
+          <div class="toys__item-title"><?php the_title(); ?></div>
           <div class="toys__item-descr">
-            Кто в детстве не хотел научиться летать? А змей поможет поймать ветер и унести все заботы далеко-далеко...
+            <?php the_field('toy_description'); ?>
           </div>
           <div class="minibutton toys__trigger">Подробнее</div>
         </div>
       </div>
 
-      <div class="toys__item" style="background-image: url(<?= bloginfo(
-          'template_url'
-      ) ?>/assets/img/toy_8.jpg)">
-        <div class="toys__item-info">
-          <div class="toys__item-title">Музыкальные</div>
-          <div class="toys__item-descr">
-            Попробуйте заинтересовать ребенка музыкой! Может в нем таится будущий Джаред Лето!
-          </div>
-          <div class="minibutton toys__trigger">Подробнее</div>
-        </div>
-      </div>
+<?php
+      }
+
+      wp_reset_postdata();
+      ?>
 
     </div>
     <div class="row">
