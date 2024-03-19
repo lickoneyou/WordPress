@@ -221,65 +221,70 @@ wp_reset_postdata();
 <div class="aboutus" id="aboutus">
   <div class="container">
     <h1 class="title">Наша история</h1>
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="subtitle">
-          Все начиналось с желания
-        </div>
-        <div class="aboutus__text">
-          Желания сделать как можно больше детей счастливыми. Именно с этой идеи все и зарождалось.
-          <br><br>
-          Первые игрушки, сделанные вручную были классическими плюшевыми медведями, которые разошлись настолько быстро,
-          что нас завалили заказами на несколько месяцев вперед. Именно в то время мы поняли, что идем правильным путем,
-          вкладывая все силы и эмоции в наши игрушки.
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <img class="aboutus__img" src="<?= bloginfo(
-            'template_url'
-        ) ?>/assets/img/about_1.jpg" alt="мир детства">
-      </div>
-    </div>
+    
+<?php
+$my_posts = get_posts([
+    'numberposts' => -1,
+    'category_name' => 'history',
+    'orderby' => 'date',
+    'order' => 'ASC',
+    'include' => [],
+    'exclude' => [],
+    'meta_key' => '',
+    'meta_value' => '',
+    'post_type' => 'post',
+    'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+]);
 
-    <div class="row">
-      <div class="col-lg-6">
-        <img class="aboutus__img" src="<?= bloginfo(
-            'template_url'
-        ) ?>/assets/img/about_2.jpg" alt="мир детства">
-      </div>
-      <div class="col-lg-6">
-        <div class="subtitle">
-          Главное - качество
-        </div>
-        <div class="aboutus__text">
-          Мы делали их вручную, из лучших материалов и не жалея времени. Но мы росли и наш ассортимент расширился и
-          фабричными изделиями.
-          <br><br>
-          Выбирая нас, вы можете быть уверены, что мы всегда следим за качеством закупок и никогда не предоставим вам
-          опасный или некачественный товар.
-        </div>
-      </div>
-    </div>
+global $post;
+$qwer = 0;
 
-    <div class="row">
+foreach ($my_posts as $post) {
+    setup_postdata($post);
+    if (!($qwer & 1)) { ?>
+     <div class="row">
       <div class="col-lg-6">
         <div class="subtitle">
-          Современные технологии
+          <?php the_title(); ?>
         </div>
         <div class="aboutus__text">
-          И даже спустя столько лет мы продолжаем создавать игрушки вручную. Как самые простые, так и те, что идут в
-          ногу со временем. Добавляя электроники и оживляя лучших друзей ребятишек, мы всегда следим за качеством и
-          безопасностью. Каждая отдельная игрушка проходит индивидуальный контроль по всем необходимым стандартам.
-          <br><br>
-          Ведь счастливое лицо ребенка - это лучшая награда для нас!
+          <?php the_field('history_description'); ?>
         </div>
       </div>
       <div class="col-lg-6">
-        <img class="aboutus__img" src="<?= bloginfo(
-            'template_url'
-        ) ?>/assets/img/about_3.jpg" alt="мир детства">
+        <img class="aboutus__img" src="<?php the_field(
+            'history_img'
+        ); ?>" alt="мир детства">
       </div>
     </div>
+    <?php } else { ?>
+<div class="row">
+      <div class="col-lg-6">
+        <img class="aboutus__img" src="<?php the_field(
+            'history_img'
+        ); ?>" alt="мир детства">
+      </div>
+      <div class="col-lg-6">
+        <div class="subtitle">
+         <?php the_title(); ?>
+        </div>
+        <div class="aboutus__text">
+          <?php the_field('history_description'); ?>
+        </div>
+      </div>
+    </div>
+<?php }
+
+    $qwer++;
+}
+
+wp_reset_postdata();
+
+// сброс
+?>
+  
+
+    
   </div>
 </div>
 
