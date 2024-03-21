@@ -137,7 +137,8 @@ foreach ($my_posts as $post) {
           <div class="toys__item-descr">
             <?php the_field('toy_description'); ?>
           </div>
-          <div class="minibutton toys__trigger">Подробнее</div>
+          <a href='<?= get_permalink() ?>' class="minibutton toys__trigger">Подробнее</a>
+
         </div>
       </div>
 
@@ -184,7 +185,8 @@ wp_reset_postdata();
           <div class="toys__item-descr">
             <?php the_field('toy_description'); ?>
           </div>
-          <div class="minibutton toys__trigger">Подробнее</div>
+          <a href='<?= get_permalink() ?>' class="minibutton toys__trigger">Подробнее</a>
+
         </div>
       </div>
 
