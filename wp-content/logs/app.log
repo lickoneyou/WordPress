@@ -1,0 +1,199 @@
+
+21-03-2024 20:33:50 [localhost][info] Parent plugin start installation!
+21-03-2024 20:33:50 [localhost][info] Plugin installation: try create plugin tables.
+																	-DB Version: 0
+																	-Plugin Version in DB: 0
+																	-Current Plugin Version: 1.6.7
+21-03-2024 20:33:50 [localhost][info] Parent plugin installation complete!
+-------------------------------
+21-03-2024 20:34:00 [localhost][info] Try to create backup directory. Backup dir: (/Applications/MAMP/htdocs/childhood/wp-content/uploads/wio_backup)
+-------------------------------
+21-03-2024 20:34:15 [localhost][info] Start bulk optimization process! Scope: media-library
+21-03-2024 20:34:15 [localhost][info] Try to create backup directory. Backup dir: (/Applications/MAMP/htdocs/childhood/wp-content/uploads/wio_backup/2024/03)
+21-03-2024 20:34:15 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/logo.png) to a remote server (server_1).
+21-03-2024 20:34:16 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:16 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/logo-150x150.png) to a remote server (server_1).
+21-03-2024 20:34:16 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:17 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/logo-300x90.png) to a remote server (server_1).
+21-03-2024 20:34:17 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:17 [localhost][debug] New queue created #1, attributes values: {"server_id":null,"object_id":"6","object_name":"","item_type":"attachment","item_hash":null,"item_hash_alternative":null,"result_status":"success","processing_level":"normal","is_backed_up":true,"original_size":24605,"final_size":21995,"original_mime_type":"image\/png","final_mime_type":"image\/png","extra_data":"{\"thumbnails_count\":2,\"original_main_size\":17005,\"class\":\"RIO_Attachment_Extra_Data\"}","created_at":1711042457}
+21-03-2024 20:34:17 [localhost][info] End bulk optimization process! Scope: media-library. Remain: 19
+-------------------------------
+21-03-2024 20:34:17 [localhost][info] Start bulk optimization process! Scope: media-library
+21-03-2024 20:34:18 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/about.jpg) to a remote server (server_1).
+21-03-2024 20:34:19 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:20 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/about-150x150.jpg) to a remote server (server_1).
+21-03-2024 20:34:20 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:20 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/about-300x200.jpg) to a remote server (server_1).
+21-03-2024 20:34:20 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:21 [localhost][debug] New queue created #2, attributes values: {"server_id":null,"object_id":"13","object_name":"","item_type":"attachment","item_hash":null,"item_hash_alternative":null,"result_status":"success","processing_level":"normal","is_backed_up":true,"original_size":123958,"final_size":123118,"original_mime_type":"image\/jpeg","final_mime_type":"image\/jpeg","extra_data":"{\"thumbnails_count\":2,\"original_main_size\":106608,\"class\":\"RIO_Attachment_Extra_Data\"}","created_at":1711042461}
+21-03-2024 20:34:21 [localhost][info] End bulk optimization process! Scope: media-library. Remain: 18
+-------------------------------
+21-03-2024 20:34:21 [localhost][info] Start bulk optimization process! Scope: media-library
+21-03-2024 20:34:21 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/email.png) to a remote server (server_1).
+21-03-2024 20:34:21 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:21 [localhost][debug] New queue created #3, attributes values: {"server_id":null,"object_id":"26","object_name":"","item_type":"attachment","item_hash":null,"item_hash_alternative":null,"result_status":"success","processing_level":"normal","is_backed_up":true,"original_size":719,"final_size":719,"original_mime_type":"image\/png","final_mime_type":"image\/png","extra_data":"{\"thumbnails_count\":0,\"original_main_size\":719,\"class\":\"RIO_Attachment_Extra_Data\"}","created_at":1711042461}
+21-03-2024 20:34:21 [localhost][info] End bulk optimization process! Scope: media-library. Remain: 17
+-------------------------------
+21-03-2024 20:34:21 [localhost][info] Start bulk optimization process! Scope: media-library
+21-03-2024 20:34:21 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/phone.png) to a remote server (server_1).
+21-03-2024 20:34:21 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:22 [localhost][debug] New queue created #4, attributes values: {"server_id":null,"object_id":"28","object_name":"","item_type":"attachment","item_hash":null,"item_hash_alternative":null,"result_status":"success","processing_level":"normal","is_backed_up":true,"original_size":439,"final_size":439,"original_mime_type":"image\/png","final_mime_type":"image\/png","extra_data":"{\"thumbnails_count\":0,\"original_main_size\":439,\"class\":\"RIO_Attachment_Extra_Data\"}","created_at":1711042462}
+21-03-2024 20:34:22 [localhost][info] End bulk optimization process! Scope: media-library. Remain: 16
+-------------------------------
+21-03-2024 20:34:22 [localhost][info] Start bulk optimization process! Scope: media-library
+21-03-2024 20:34:22 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/pointer.png) to a remote server (server_1).
+21-03-2024 20:34:22 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:22 [localhost][debug] New queue created #5, attributes values: {"server_id":null,"object_id":"29","object_name":"","item_type":"attachment","item_hash":null,"item_hash_alternative":null,"result_status":"success","processing_level":"normal","is_backed_up":true,"original_size":481,"final_size":481,"original_mime_type":"image\/png","final_mime_type":"image\/png","extra_data":"{\"thumbnails_count\":0,\"original_main_size\":481,\"class\":\"RIO_Attachment_Extra_Data\"}","created_at":1711042462}
+21-03-2024 20:34:22 [localhost][info] End bulk optimization process! Scope: media-library. Remain: 15
+-------------------------------
+21-03-2024 20:34:22 [localhost][info] Start bulk optimization process! Scope: media-library
+21-03-2024 20:34:22 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/team.jpg) to a remote server (server_1).
+21-03-2024 20:34:25 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:25 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/team-150x150.jpg) to a remote server (server_1).
+21-03-2024 20:34:26 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:26 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/team-300x153.jpg) to a remote server (server_1).
+21-03-2024 20:34:26 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:26 [localhost][debug] New queue created #6, attributes values: {"server_id":null,"object_id":"39","object_name":"","item_type":"attachment","item_hash":null,"item_hash_alternative":null,"result_status":"success","processing_level":"normal","is_backed_up":true,"original_size":202852,"final_size":201418,"original_mime_type":"image\/jpeg","final_mime_type":"image\/jpeg","extra_data":"{\"thumbnails_count\":2,\"original_main_size\":179283,\"class\":\"RIO_Attachment_Extra_Data\"}","created_at":1711042466}
+21-03-2024 20:34:27 [localhost][info] End bulk optimization process! Scope: media-library. Remain: 14
+-------------------------------
+21-03-2024 20:34:27 [localhost][info] Start bulk optimization process! Scope: media-library
+21-03-2024 20:34:27 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/bg_1.jpg) to a remote server (server_1).
+21-03-2024 20:34:28 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:28 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/bg_1-150x150.jpg) to a remote server (server_1).
+21-03-2024 20:34:29 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:29 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/bg_1-300x148.jpg) to a remote server (server_1).
+21-03-2024 20:34:29 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:29 [localhost][debug] New queue created #7, attributes values: {"server_id":null,"object_id":"67","object_name":"","item_type":"attachment","item_hash":null,"item_hash_alternative":null,"result_status":"success","processing_level":"normal","is_backed_up":true,"original_size":87317,"final_size":86632,"original_mime_type":"image\/jpeg","final_mime_type":"image\/jpeg","extra_data":"{\"thumbnails_count\":2,\"original_main_size\":74913,\"class\":\"RIO_Attachment_Extra_Data\"}","created_at":1711042469}
+21-03-2024 20:34:29 [localhost][info] End bulk optimization process! Scope: media-library. Remain: 13
+-------------------------------
+21-03-2024 20:34:29 [localhost][info] Start bulk optimization process! Scope: media-library
+21-03-2024 20:34:30 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/bg_2.jpg) to a remote server (server_1).
+21-03-2024 20:34:31 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:31 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/bg_2-150x150.jpg) to a remote server (server_1).
+21-03-2024 20:34:31 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:31 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/bg_2-300x94.jpg) to a remote server (server_1).
+21-03-2024 20:34:32 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:32 [localhost][debug] New queue created #8, attributes values: {"server_id":null,"object_id":"69","object_name":"","item_type":"attachment","item_hash":null,"item_hash_alternative":null,"result_status":"success","processing_level":"normal","is_backed_up":true,"original_size":83225,"final_size":82581,"original_mime_type":"image\/jpeg","final_mime_type":"image\/jpeg","extra_data":"{\"thumbnails_count\":2,\"original_main_size\":73878,\"class\":\"RIO_Attachment_Extra_Data\"}","created_at":1711042472}
+21-03-2024 20:34:32 [localhost][info] End bulk optimization process! Scope: media-library. Remain: 12
+-------------------------------
+21-03-2024 20:34:32 [localhost][info] Start bulk optimization process! Scope: media-library
+21-03-2024 20:34:32 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/bg_3.jpg) to a remote server (server_1).
+21-03-2024 20:34:35 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:36 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/bg_3-150x150.jpg) to a remote server (server_1).
+21-03-2024 20:34:36 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:36 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/bg_3-300x148.jpg) to a remote server (server_1).
+21-03-2024 20:34:37 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:37 [localhost][debug] New queue created #9, attributes values: {"server_id":null,"object_id":"72","object_name":"","item_type":"attachment","item_hash":null,"item_hash_alternative":null,"result_status":"success","processing_level":"normal","is_backed_up":true,"original_size":219085,"final_size":218161,"original_mime_type":"image\/jpeg","final_mime_type":"image\/jpeg","extra_data":"{\"thumbnails_count\":2,\"original_main_size\":203123,\"class\":\"RIO_Attachment_Extra_Data\"}","created_at":1711042477}
+21-03-2024 20:34:37 [localhost][info] End bulk optimization process! Scope: media-library. Remain: 11
+-------------------------------
+21-03-2024 20:34:37 [localhost][info] Start bulk optimization process! Scope: media-library
+21-03-2024 20:34:37 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/about_1.jpg) to a remote server (server_1).
+21-03-2024 20:34:41 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:41 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/about_1-150x150.jpg) to a remote server (server_1).
+21-03-2024 20:34:42 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:42 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/about_1-300x200.jpg) to a remote server (server_1).
+21-03-2024 20:34:42 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:42 [localhost][debug] New queue created #10, attributes values: {"server_id":null,"object_id":"81","object_name":"","item_type":"attachment","item_hash":null,"item_hash_alternative":null,"result_status":"success","processing_level":"normal","is_backed_up":true,"original_size":150033,"final_size":149020,"original_mime_type":"image\/jpeg","final_mime_type":"image\/jpeg","extra_data":"{\"thumbnails_count\":2,\"original_main_size\":128899,\"class\":\"RIO_Attachment_Extra_Data\"}","created_at":1711042482}
+21-03-2024 20:34:42 [localhost][info] End bulk optimization process! Scope: media-library. Remain: 10
+-------------------------------
+21-03-2024 20:34:42 [localhost][info] Start bulk optimization process! Scope: media-library
+21-03-2024 20:34:43 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/about_2.jpg) to a remote server (server_1).
+21-03-2024 20:34:45 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:45 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/about_2-150x150.jpg) to a remote server (server_1).
+21-03-2024 20:34:46 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:46 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/about_2-300x200.jpg) to a remote server (server_1).
+21-03-2024 20:34:46 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:46 [localhost][debug] New queue created #11, attributes values: {"server_id":null,"object_id":"83","object_name":"","item_type":"attachment","item_hash":null,"item_hash_alternative":null,"result_status":"success","processing_level":"normal","is_backed_up":true,"original_size":186731,"final_size":185819,"original_mime_type":"image\/jpeg","final_mime_type":"image\/jpeg","extra_data":"{\"thumbnails_count\":2,\"original_main_size\":167283,\"class\":\"RIO_Attachment_Extra_Data\"}","created_at":1711042486}
+21-03-2024 20:34:46 [localhost][info] End bulk optimization process! Scope: media-library. Remain: 9
+-------------------------------
+21-03-2024 20:34:47 [localhost][info] Start bulk optimization process! Scope: media-library
+21-03-2024 20:34:47 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/about_3.jpg) to a remote server (server_1).
+21-03-2024 20:34:48 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:49 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/about_3-150x150.jpg) to a remote server (server_1).
+21-03-2024 20:34:49 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:49 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/about_3-300x195.jpg) to a remote server (server_1).
+21-03-2024 20:34:49 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:50 [localhost][debug] New queue created #12, attributes values: {"server_id":null,"object_id":"84","object_name":"","item_type":"attachment","item_hash":null,"item_hash_alternative":null,"result_status":"success","processing_level":"normal","is_backed_up":true,"original_size":93172,"final_size":92595,"original_mime_type":"image\/jpeg","final_mime_type":"image\/jpeg","extra_data":"{\"thumbnails_count\":2,\"original_main_size\":78562,\"class\":\"RIO_Attachment_Extra_Data\"}","created_at":1711042490}
+21-03-2024 20:34:50 [localhost][info] End bulk optimization process! Scope: media-library. Remain: 8
+-------------------------------
+21-03-2024 20:34:50 [localhost][info] Start bulk optimization process! Scope: media-library
+21-03-2024 20:34:51 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_1.jpg) to a remote server (server_1).
+21-03-2024 20:34:54 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:55 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_1-150x150.jpg) to a remote server (server_1).
+21-03-2024 20:34:55 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:55 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_1-300x192.jpg) to a remote server (server_1).
+21-03-2024 20:34:56 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:34:56 [localhost][debug] New queue created #13, attributes values: {"server_id":null,"object_id":"90","object_name":"","item_type":"attachment","item_hash":null,"item_hash_alternative":null,"result_status":"success","processing_level":"normal","is_backed_up":true,"original_size":356586,"final_size":337805,"original_mime_type":"image\/jpeg","final_mime_type":"image\/jpeg","extra_data":"{\"thumbnails_count\":2,\"original_main_size\":332344,\"class\":\"RIO_Attachment_Extra_Data\"}","created_at":1711042496}
+21-03-2024 20:34:56 [localhost][info] End bulk optimization process! Scope: media-library. Remain: 7
+-------------------------------
+21-03-2024 20:34:56 [localhost][info] Start bulk optimization process! Scope: media-library
+21-03-2024 20:34:56 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_2.jpg) to a remote server (server_1).
+21-03-2024 20:35:00 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:35:01 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_2-150x150.jpg) to a remote server (server_1).
+21-03-2024 20:35:01 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:35:01 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_2-300x193.jpg) to a remote server (server_1).
+21-03-2024 20:35:02 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:35:02 [localhost][debug] New queue created #14, attributes values: {"server_id":null,"object_id":"91","object_name":"","item_type":"attachment","item_hash":null,"item_hash_alternative":null,"result_status":"success","processing_level":"normal","is_backed_up":true,"original_size":357629,"final_size":356015,"original_mime_type":"image\/jpeg","final_mime_type":"image\/jpeg","extra_data":"{\"thumbnails_count\":2,\"original_main_size\":330233,\"class\":\"RIO_Attachment_Extra_Data\"}","created_at":1711042502}
+21-03-2024 20:35:02 [localhost][info] End bulk optimization process! Scope: media-library. Remain: 6
+-------------------------------
+21-03-2024 20:35:02 [localhost][info] Start bulk optimization process! Scope: media-library
+21-03-2024 20:35:03 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_3.jpg) to a remote server (server_1).
+21-03-2024 20:35:06 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:35:06 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_3-150x150.jpg) to a remote server (server_1).
+21-03-2024 20:35:06 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:35:07 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_3-300x200.jpg) to a remote server (server_1).
+21-03-2024 20:35:07 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:35:07 [localhost][debug] New queue created #15, attributes values: {"server_id":null,"object_id":"92","object_name":"","item_type":"attachment","item_hash":null,"item_hash_alternative":null,"result_status":"success","processing_level":"normal","is_backed_up":true,"original_size":219040,"final_size":218256,"original_mime_type":"image\/jpeg","final_mime_type":"image\/jpeg","extra_data":"{\"thumbnails_count\":2,\"original_main_size\":200413,\"class\":\"RIO_Attachment_Extra_Data\"}","created_at":1711042507}
+21-03-2024 20:35:07 [localhost][info] End bulk optimization process! Scope: media-library. Remain: 5
+-------------------------------
+21-03-2024 20:35:07 [localhost][info] Start bulk optimization process! Scope: media-library
+21-03-2024 20:35:07 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_4.jpg) to a remote server (server_1).
+21-03-2024 20:35:10 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:35:10 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_4-150x150.jpg) to a remote server (server_1).
+21-03-2024 20:35:10 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:35:11 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_4-300x199.jpg) to a remote server (server_1).
+21-03-2024 20:35:11 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:35:11 [localhost][debug] New queue created #16, attributes values: {"server_id":null,"object_id":"93","object_name":"","item_type":"attachment","item_hash":null,"item_hash_alternative":null,"result_status":"success","processing_level":"normal","is_backed_up":true,"original_size":213073,"final_size":211737,"original_mime_type":"image\/jpeg","final_mime_type":"image\/jpeg","extra_data":"{\"thumbnails_count\":2,\"original_main_size\":186681,\"class\":\"RIO_Attachment_Extra_Data\"}","created_at":1711042511}
+21-03-2024 20:35:11 [localhost][info] End bulk optimization process! Scope: media-library. Remain: 4
+-------------------------------
+21-03-2024 20:35:11 [localhost][info] Start bulk optimization process! Scope: media-library
+21-03-2024 20:35:12 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_5.jpg) to a remote server (server_1).
+21-03-2024 20:35:13 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:35:13 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_5-150x150.jpg) to a remote server (server_1).
+21-03-2024 20:35:14 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:35:14 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_5-300x200.jpg) to a remote server (server_1).
+21-03-2024 20:35:14 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:35:14 [localhost][debug] New queue created #17, attributes values: {"server_id":null,"object_id":"94","object_name":"","item_type":"attachment","item_hash":null,"item_hash_alternative":null,"result_status":"success","processing_level":"normal","is_backed_up":true,"original_size":106995,"final_size":106135,"original_mime_type":"image\/jpeg","final_mime_type":"image\/jpeg","extra_data":"{\"thumbnails_count\":2,\"original_main_size\":89728,\"class\":\"RIO_Attachment_Extra_Data\"}","created_at":1711042514}
+21-03-2024 20:35:14 [localhost][info] End bulk optimization process! Scope: media-library. Remain: 3
+-------------------------------
+21-03-2024 20:35:15 [localhost][info] Start bulk optimization process! Scope: media-library
+21-03-2024 20:35:15 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_6.jpg) to a remote server (server_1).
+21-03-2024 20:35:17 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:35:18 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_6-150x150.jpg) to a remote server (server_1).
+21-03-2024 20:35:18 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:35:19 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_6-300x190.jpg) to a remote server (server_1).
+21-03-2024 20:35:19 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:35:19 [localhost][debug] New queue created #18, attributes values: {"server_id":null,"object_id":"95","object_name":"","item_type":"attachment","item_hash":null,"item_hash_alternative":null,"result_status":"success","processing_level":"normal","is_backed_up":true,"original_size":139267,"final_size":138441,"original_mime_type":"image\/jpeg","final_mime_type":"image\/jpeg","extra_data":"{\"thumbnails_count\":2,\"original_main_size\":116355,\"class\":\"RIO_Attachment_Extra_Data\"}","created_at":1711042519}
+21-03-2024 20:35:19 [localhost][info] End bulk optimization process! Scope: media-library. Remain: 2
+-------------------------------
+21-03-2024 20:35:19 [localhost][info] Start bulk optimization process! Scope: media-library
+21-03-2024 20:35:20 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_7.jpg) to a remote server (server_1).
+21-03-2024 20:35:20 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:35:21 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_7-150x150.jpg) to a remote server (server_1).
+21-03-2024 20:35:21 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:35:21 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_7-300x200.jpg) to a remote server (server_1).
+21-03-2024 20:35:21 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:35:22 [localhost][debug] New queue created #19, attributes values: {"server_id":null,"object_id":"96","object_name":"","item_type":"attachment","item_hash":null,"item_hash_alternative":null,"result_status":"success","processing_level":"normal","is_backed_up":true,"original_size":45253,"final_size":44487,"original_mime_type":"image\/jpeg","final_mime_type":"image\/jpeg","extra_data":"{\"thumbnails_count\":2,\"original_main_size\":36217,\"class\":\"RIO_Attachment_Extra_Data\"}","created_at":1711042522}
+21-03-2024 20:35:22 [localhost][info] End bulk optimization process! Scope: media-library. Remain: 1
+-------------------------------
+21-03-2024 20:35:22 [localhost][info] Start bulk optimization process! Scope: media-library
+21-03-2024 20:35:22 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_8.jpg) to a remote server (server_1).
+21-03-2024 20:35:23 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:35:24 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_8-150x150.jpg) to a remote server (server_1).
+21-03-2024 20:35:24 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:35:24 [localhost][info] Preparing to upload a file (/Applications/MAMP/htdocs/childhood/wp-content/uploads/2024/03/toy_8-300x169.jpg) to a remote server (server_1).
+21-03-2024 20:35:25 [localhost][info] File successfully uploaded to remote server (server_1).
+21-03-2024 20:35:25 [localhost][debug] New queue created #20, attributes values: {"server_id":null,"object_id":"98","object_name":"","item_type":"attachment","item_hash":null,"item_hash_alternative":null,"result_status":"success","processing_level":"normal","is_backed_up":true,"original_size":99214,"final_size":98607,"original_mime_type":"image\/jpeg","final_mime_type":"image\/jpeg","extra_data":"{\"thumbnails_count\":2,\"original_main_size\":82555,\"class\":\"RIO_Attachment_Extra_Data\"}","created_at":1711042525}
+21-03-2024 20:35:25 [localhost][info] End bulk optimization process! Scope: media-library. Remain: 0
+-------------------------------
