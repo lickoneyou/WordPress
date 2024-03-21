@@ -79,4 +79,4 @@ wp_reset_postdata();
     </div>
   </div>
 
-<?php get_footer();
+<?php get_footer(); ?>
