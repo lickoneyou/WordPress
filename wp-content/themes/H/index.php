@@ -37,7 +37,9 @@ wp_reset_postdata();
       <div class="layerContainer">
         <img
           class="layer"
-          src="./assets/img/buildings__black_3164.png"
+          src="<?= bloginfo(
+              'template_url'
+          ) ?>/assets/img/buildings__black_3164.png"
           alt="layer"
         />
       </div>
