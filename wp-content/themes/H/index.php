@@ -146,22 +146,28 @@ wp_reset_postdata();
         </div>
       </section>
       <section class="contactsSection">
-        <h2 class="title">Contac Us</h2>
-        <h3 class="subtitle">We know what we need to do</h3>
+        <h2 class="title"><?php the_field('contacts_title'); ?></h2>
+        <h3 class="subtitle"><?php the_field('contacts_subtitle'); ?></h3>
         <address class="contactsContainer">
           <figure class="contactsWrapper">
-            <img src="./assets/img/icons/phone.png" alt="phone" />
-            <figcaption>555-222-333</figcaption>
+            <img src="<?= bloginfo(
+                'template_url'
+            ) ?>/assets/img/icons/phone.png" alt="phone" />
+            <figcaption><?php the_field('contacts_phone'); ?></figcaption>
           </figure>
 
           <figure class="contactsWrapper">
-            <img src="./assets/img/icons/pin.png" alt="pin" />
-            <figcaption>Here is some address</figcaption>
+            <img src="<?= bloginfo(
+                'template_url'
+            ) ?>/assets/img/icons/pin.png" alt="pin" />
+            <figcaption><?php the_field('contacts_address'); ?></figcaption>
           </figure>
 
           <figure class="contactsWrapper">
-            <img src="./assets/img/icons/mail.png" alt="" />
-            <figcaption>somemail@hotmail.com</figcaption>
+            <img src="<?= bloginfo(
+                'template_url'
+            ) ?>/assets/img/icons/mail.png" alt="" />
+            <figcaption><?php the_field('contacts_email'); ?></figcaption>
           </figure>
         </address>
 
