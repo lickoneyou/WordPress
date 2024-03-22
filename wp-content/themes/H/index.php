@@ -101,43 +101,48 @@ wp_reset_postdata();
         </div>
       </section>
       <section class="provideSection">
-        <h4 class="title white">We provide you everything</h4>
+        <h4 class="title white"><?php the_field('about_title'); ?></h4>
         <h5 class="subtitle">
-          Maybe not everything, but we provide you some stuff.
+          <?php the_field('about_subtitle'); ?>
         </h5>
         <div class="provideContainer">
-          <div class="provideWrapper">
-            <div>
-              <img src="./assets/img/icons/line.png" alt="line" />
-            </div>
-            <h4>Some Analytics</h4>
-            <p>
-              Aenean nisi lectus, convallis non lorem sit amet, rhoncus
-              malesuada justo
-            </p>
-          </div>
+
+<?php
+// параметры по умолчанию
+$my_posts = get_posts([
+    'numberposts' => 3,
+    'category_name' => 'about_us',
+    'orderby' => 'date',
+    'order' => 'ACS',
+    'include' => [],
+    'exclude' => [],
+    'meta_key' => '',
+    'meta_value' => '',
+    'post_type' => 'post',
+    'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+]);
+
+global $post;
+
+foreach ($my_posts as $post) {
+    setup_postdata($post); ?>
 
           <div class="provideWrapper">
             <div>
-              <img src="./assets/img/icons/heart.png" alt="heart" />
+              <img src="<?php the_field('about_us_img'); ?>" alt="line" />
             </div>
-            <h4>We provide you love</h4>
-            <p>
-              Aenean nisi lectus, convallis non lorem sit amet, rhoncus
-              malesuada justo
-            </p>
+            <h4><?php the_field('about_us_title'); ?></h4>
+            <p><?php the_field('about_us_description'); ?></p>
           </div>
 
-          <div class="provideWrapper">
-            <div>
-              <img src="./assets/img/icons/cloud.png" alt="cloud" />
-            </div>
-            <h4>And Some Cloud</h4>
-            <p>
-              Aenean nisi lectus, convallis non lorem sit amet, rhoncus
-              malesuada justo
-            </p>
-          </div>
+<?php
+}
+
+wp_reset_postdata();
+
+// сброс
+?>
+
         </div>
       </section>
       <section class="contactsSection">
