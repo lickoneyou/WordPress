@@ -172,11 +172,9 @@ wp_reset_postdata();
         </address>
 
         <form>
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email" />
-          <input type="tel" placeholder="Number" />
-          <textarea placeholder="Write your Message here..."></textarea>
-          <input type="submit" value="Submit" />
+          <?php echo do_shortcode(
+              '[contact-form-7 id="4d9e624" title="Форма"]'
+          ); ?>
         </form>
       </section>
     </main>
