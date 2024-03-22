@@ -35,10 +35,10 @@
         </div>
       </nav>
       <div class="headerContainer">
-        <h1 class="headerTitle">We build it with passion</h1>
+        <h1 class="headerTitle"><?php the_field('title'); ?></h1>
         <h2 class="headerSubTitle">
-          Just to be clear, we do this for fun not for you, just kidding.
+          <?php the_field('subtitle'); ?>
         </h2>
-        <button class="headerBTN">READ MORE</button>
+        <button class="headerBTN"><?php the_field('btn_text'); ?></button>
       </div>
     </header>
