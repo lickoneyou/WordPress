@@ -44,38 +44,60 @@ wp_reset_postdata();
         />
       </div>
       <section class="teamSection">
-        <h2 class="title">This is our team</h2>
-        <h3 class="subtitle">We are small but effective and ...</h3>
+        <h2 class="title"><?php the_field('team_title'); ?></h2>
+        <h3 class="subtitle"><?php the_field('team_subtitle'); ?></h3>
         <div class="teamContainer">
+
+<?php
+$my_posts = get_posts([
+    'numberposts' => -1,
+    'category_name' => 'teammates',
+    'orderby' => 'date',
+    'order' => 'ACS',
+    'include' => [],
+    'exclude' => [],
+    'meta_key' => '',
+    'meta_value' => '',
+    'post_type' => 'post',
+    'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+]);
+
+global $post;
+
+foreach ($my_posts as $post) {
+    setup_postdata($post); ?>
+
           <div class="teammateWrapper">
-            <img src="./assets/img/team/1.png" alt="teammate" />
-            <h4>Mark Once</h4>
-            <h5>Designer & Front-End Developer</h5>
+            <img src="<?php the_field('teammate_foto'); ?>" alt="teammate" />
+            <h4><?php the_field('teammate_name'); ?></h4>
+            <h5><?php the_field('teammate_position'); ?></h5>
             <div class="socialMediaWrapper">
-              <img src="./assets/img/icons/twitter.png" alt="twitter" />
-              <img src="./assets/img/icons/instagram.png" alt="instagram" />
+              <?php if (get_field('teammate_twitter')) { ?>
+              <a href='<?php the_field(
+                  'teammate_twitter'
+              ); ?>'><img src="<?= bloginfo(
+    'template_url'
+) ?>/assets/img/icons/twitter.png" alt="twitter" target='_blank'/></a>
+              <?php } ?>
+
+              <?php if (get_field('teammate_instagram')) { ?>
+              <a href='<?php the_field(
+                  'teammate_instagram'
+              ); ?>'><img src="<?= bloginfo(
+    'template_url'
+) ?>/assets/img/icons/instagram.png" alt="instagram" target='_blank'/></a>
+              <?php } ?>
+
             </div>
           </div>
 
-          <div class="teammateWrapper">
-            <img src="./assets/img/team/2.png" alt="teammate" />
-            <h4>Justin Twice</h4>
-            <h5>Founder & CEO</h5>
-            <div class="socialMediaWrapper">
-              <img src="./assets/img/icons/twitter.png" alt="twitter" />
-              <img src="./assets/img/icons/instagram.png" alt="instagram" />
-            </div>
-          </div>
+<?php
+}
+wp_reset_postdata();
 
-          <div class="teammateWrapper">
-            <img src="./assets/img/team/3.png" alt="teammate" />
-            <h4>Antonio Never</h4>
-            <h5>Someone & Somewhere</h5>
-            <div class="socialMediaWrapper">
-              <img src="./assets/img/icons/twitter.png" alt="twitter" />
-              <img src="./assets/img/icons/instagram.png" alt="instagram" />
-            </div>
-          </div>
+// сброс
+?>
+
         </div>
       </section>
       <section class="provideSection">
