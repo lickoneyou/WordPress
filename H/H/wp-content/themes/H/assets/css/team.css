@@ -1,0 +1,108 @@
+.teamSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 110px 146px 110px;
+  margin-top: 138px;
+}
+
+.title {
+  font-family: var(--title-font);
+  font-size: 34px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #1d1e1f;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: var(--subTitle-font);
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: #898888;
+  margin-bottom: 131px;
+  text-align: center;
+}
+
+.teamContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.teammateWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teammateWrapper h4,
+.teammateWrapper h5 {
+  font-family: 'Helvetica Neue Pro';
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.teammateWrapper > img {
+  width: 170px;
+}
+
+.teammateWrapper h4 {
+  font-size: 24px;
+  color: #464646;
+  margin-top: 29px;
+}
+
+.teammateWrapper h5 {
+  font-size: 13px;
+  color: #b3b3b3;
+  margin-bottom: 22px;
+}
+
+.socialMediaWrapper {
+  width: 33%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.socialMediaWrapper > img{
+  cursor: pointer;
+}
+
+.socialMediaWrapper > img:hover{
+  transform: scale(1.3);
+}
+
+@media screen and (max-width: 800px) {
+  .teamSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 10px 146px 10px;
+    margin-top: 138px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .subtitle {
+    margin-bottom: 100px;
+  }
+
+  .teamContainer {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .teammateWrapper {
+    margin-bottom: 40px;
+  }
+
+  .teammateWrapper:last-child {
+    margin-bottom: 0;
+  }
+}

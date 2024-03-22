@@ -1,0 +1,10 @@
+footer > p {
+  font-family: var(--years-font);
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #3b3b3b;
+  padding-bottom: 29px;
+  text-align: center;
+}
