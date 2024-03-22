@@ -1,0 +1,60 @@
+.years {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 128px 93px 0px 93px;
+  background: var(--bg-color);
+}
+
+.years > div {
+  width: 417px;
+  height: 276px;
+  background: rgba(54, 54, 54, 0.168);
+  margin: 0 178px 178px 0;
+  padding: 0 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.years > div:nth-child(even) {
+  margin: 0 0 178px 0;
+}
+
+.years > div > h2 {
+  font-family: var(--years-font);
+  font-size: 48px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #fefefe;
+  margin-bottom: 27px;
+}
+
+.years > div > p {
+  font-family: var(--main-font);
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: #b7b7b7;
+  text-align: center;
+}
+
+@media screen and (max-width: 1197px) {
+  .years {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px 30px 10px;
+  }
+
+  .years > div {
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+
+  .years > div:nth-child(even) {
+    margin: 0 0 20px 0;
+  }
+}

@@ -1,0 +1,47 @@
+:root {
+  --nav-text: 'Roboto-Regular';
+  --title-font: 'HelveticaNeueLTProLt';
+  --subTitle-font: 'Merriweather-LightItalic';
+  --main-font: 'Montserrat-Light';
+  --years-font: 'HelveticaNeueLTProRoman';
+  --name-font: 'HelveticaNeueLTProMd';
+  --main-color: black;
+  --bg-color: #1d1d1d;
+  --second-color: white;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 94px 1fr 94px;
+}
+
+header {
+  grid-row: 1/2;
+  grid-column: 1/4;
+}
+
+main {
+  grid-row: 2/3;
+  grid-column: 1/4;
+  margin-top: 206px;
+}
+
+footer {
+  grid-row: 3/3;
+  grid-column: 1/4;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 820px) {
+  body {
+    grid-template-columns: 10px 1fr 10px;
+  }
+}
+
+@media screen and (min-width: 1750px) {
+  body {
+    grid-template-columns: 94px 1600px 94px;
+    justify-content: center;
+  }
+}

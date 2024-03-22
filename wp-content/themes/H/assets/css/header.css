@@ -1,0 +1,47 @@
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 207px;
+}
+
+.headerTitle {
+  font-family: var(--title-font);
+  font-size: 44px;
+  line-height: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #1d1e1f;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.headerSubTitle {
+  font-family: var(--subTitle-font);
+  font-size: 16px;
+  line-height: 2rem;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.03em;
+  color: #898888;
+  text-align: center;
+}
+
+.headerBTN {
+  font-family: var(--main-font);
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--main-color);
+  width: 188px;
+  height: 57px;
+  border: 1px solid var(--main-color);
+  margin-top: 43px;
+  transition: all 300ms ease;
+}
+
+.headerBTN:hover {
+  color: var(--second-color);
+  background: var(--main-color);
+}
