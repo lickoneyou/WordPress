@@ -1,5 +1,5 @@
     <footer>
-      <p>Copyright © lickoneyou. All rights reserved. 2024</p>
+      <p><?php the_field('copyright'); ?></p>
     </footer>
     <?php wp_footer(); ?>
   </body>
