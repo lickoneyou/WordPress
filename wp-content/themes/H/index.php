@@ -1,35 +1,38 @@
     <?php get_header(); ?> 
     <main>
       <section class="years">
+
+<?php
+// параметры по умолчанию
+$my_posts = get_posts([
+    'numberposts' => -1,
+    'category_name' => 'dates',
+    'orderby' => 'date',
+    'order' => 'ASC',
+    'include' => [],
+    'exclude' => [],
+    'meta_key' => '',
+    'meta_value' => '',
+    'post_type' => 'post',
+    'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+]);
+
+global $post;
+
+foreach ($my_posts as $post) {
+    setup_postdata($post); ?>
         <div>
-          <h2>2011</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-            obcaecati beatae odio maiores nisi suscipit eaque facilis iure
-            eveniet iusto rem aliquam sint voluptas veritatis ab, aliquid sequi
-            natus! Repellat!
-          </p>
+          <h2><?php the_title(); ?></h2>
+          <p><?php the_field('data_description'); ?></p>
         </div>
-        <div>
-          <h2>2012</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-            repellendus accusantium temporibus aspernatur fuga animi laudantium
-            harum, odio, adipisci, quidem cupiditate aperiam aut vel? Molestiae
-            repellat eaque asperiores maxime veniam?
-          </p>
-        </div>
-        <div>
-          <h2>2013</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt illum
-            doloremque molestiae voluptatibus excepturi a neque?
-          </p>
-        </div>
-        <div>
-          <h2>2014</h2>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </div>
+<?php
+}
+
+wp_reset_postdata();
+
+// сброс
+?>
+
       </section>
       <div class="layerContainer">
         <img
