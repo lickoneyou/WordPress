@@ -1,0 +1,2 @@
+[04-Jun-2024 08:29:33 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /Applications/MAMP/htdocs/childhood/RumTibet/RumTibet/wp-includes/Requests/src/Transport/Curl.php on line 534
+[04-Jun-2024 08:29:44 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /Applications/MAMP/htdocs/childhood/RumTibet/RumTibet/wp-includes/Requests/src/Transport/Curl.php on line 534
