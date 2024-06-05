@@ -27,12 +27,10 @@
       <section class="offer">
         <div class="offerContainer">
           <div class="offerDescriptionWrapper">
-            <p class="offerSubtitle">наше предложение</p>
-            <h2 class="offerTitle">Лучшие программы для тебя</h2>
+            <p class="offerSubtitle"><?php the_field('our_offer_title'); ?></p>
+            <h2 class="offerTitle"><?php the_field('our_offer_subtitle'); ?></h2>
             <p class="offerDescription">
-              Его корни уходят в один фрагмент классической латыни 45 года н.э.,
-              то есть более двух тысячелетий назад. Ричард МакКлинток, профессор
-              латыни из колледжа.
+              <?php the_field('our_offer_description'); ?>
             </p>
             <div class="descriptionProgramms">
               <div class="programmsItem">
@@ -77,18 +75,10 @@
             </div>
           </div>
           <div class="offerImg">
-            <img src="<?= bloginfo(
-                'template_url'
-            ) ?>/assets/images/1.72073bd726a8b57767b0.png" alt="offerImg" />
-            <img src="<?= bloginfo(
-                'template_url'
-            ) ?>/assets/images/2.e156b5a4cae67878938a.png" alt="offerImg" />
-            <img src="<?= bloginfo(
-                'template_url'
-            ) ?>/assets/images/3.1182e482f5038dd75764.png" alt="offerImg" />
-            <img src="<?= bloginfo(
-                'template_url'
-            ) ?>/assets/images/4.50d310b5fa642b437d30.png" alt="offerImg" />
+            <img src="<?php the_field('our_offer_img1'); ?>" alt="offerImg" />
+            <img src="<?php the_field('our_offer_img2'); ?>" alt="offerImg" />
+            <img src="<?php the_field('our_offer_img3'); ?>" alt="offerImg" />
+            <img src="<?php the_field('our_offer_img4'); ?>" alt="offerImg" />
           </div>
           <button>Стоимость программы</button>
         </div>
