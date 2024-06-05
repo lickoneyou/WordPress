@@ -40,7 +40,7 @@
 // параметры по умолчанию
 $my_posts = get_posts([
     'numberposts' => -1,
-    'category' => 'programs',
+    'category_name' => 'programs',
     'orderby' => 'date',
     'order' => 'DESC',
     'include' => [],
@@ -100,7 +100,7 @@ wp_reset_postdata();
           // параметры по умолчанию
           $my_posts = get_posts([
               'numberposts' => 3,
-              'category' => 'rest',
+              'category_name' => 'rest',
               'orderby' => 'date',
               'order' => 'DESC',
               'include' => [],
@@ -149,82 +149,51 @@ wp_reset_postdata();
           <p class="blogSubtitle"><?php the_field('blog_title'); ?></p>
           <h2 class="blogTitle"><?php the_field('blog_subTitle'); ?></h2>
           <div class="blogCardWrapper">
-            <div class="blogCard">
-              <img src="<?= bloginfo(
-                  'template_url'
-              ) ?>/assets/images/1.7cd50ee5db2c8c5e1b90.png" alt="blogPhoto" />
+
+<?php
+// параметры по умолчанию
+$my_posts = get_posts([
+    'numberposts' => -1,
+    'category_name' => 'travel',
+    'orderby' => 'date',
+    'order' => 'DESC',
+    'include' => [],
+    'exclude' => [],
+    'meta_key' => '',
+    'meta_value' => '',
+    'post_type' => 'post',
+    'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+]);
+
+global $post;
+
+foreach ($my_posts as $post) {
+    setup_postdata($post); ?>
+          <div class="blogCard">
+              <img src="<?php the_field('travel_foto'); ?>" alt="blogPhoto" />
               <div class="blogCardDescription">
                 <div class="blogTitleAndDecsriptionWrapper">
-                  <h3>Красивая Италя, какая она в реальности?</h3>
+                  <h3><?php the_field('travel_title'); ?></h3>
                   <p>
-                    Для современного мира базовый вектор развития предполагает
-                    независимые способы реализации соответствующих условий
-                    активизации.
+                    <?php the_field('travel_descr'); ?>
                   </p>
                 </div>
                 <div class="blogFooter">
-                  <p class="blogDate">01/04/2023</p>
+                  <p class="blogDate"><?php the_field('travel_date'); ?></p>
                   <a class="blogLink" href="#">читать статью</a>
                 </div>
               </div>
             </div>
-            <div class="blogCard">
-              <img src="<?= bloginfo(
-                  'template_url'
-              ) ?>/assets/images/2.5fc0c278c0bf964d522d.png" alt="blogPhoto" />
-              <div class="blogCardDescription">
-                <div class="blogTitleAndDecsriptionWrapper">
-                  <h3>Долой сомнения! Весь мир открыт для вас!</h3>
-                  <p>
-                    Для современного мира базовый вектор развития предполагает
-                    независимые способы реализации соответствующих условий
-                    активизации ... независимые способы реализации
-                    соответствующих условий активизации ...Для современного мира
-                    базовый вектор развития предполагает независимые способы
-                    реализации соответствующих условий активизации ...
-                    независимые способы реализации соответствующих условий
-                    активизации ...
-                  </p>
-                </div>
-                <div class="blogFooter">
-                  <p class="blogDate">01/04/2023</p>
-                  <a class="blogLink" href="#">читать статью</a>
-                </div>
-              </div>
-            </div>
-            <div class="blogCard">
-              <img src="<?= bloginfo(
-                  'template_url'
-              ) ?>/assets/images/3.f814adad441b59cd7365.png" alt="blogPhoto" />
-              <div class="blogCardDescription">
-                <div class="blogTitleAndDecsriptionWrapper">
-                  <h3>Как подготовиться к путешествию в одиночку?</h3>
-                  <p>
-                    Для современного мира базовый вектор развития предполагает.
-                  </p>
-                </div>
-                <div class="blogFooter">
-                  <p class="blogDate">01/04/2023</p>
-                  <a class="blogLink" href="#">читать статью</a>
-                </div>
-              </div>
-            </div>
-            <div class="blogCard">
-              <img src="<?= bloginfo(
-                  'template_url'
-              ) ?>/assets/images/4.316f67bd039482fd073b.png" alt="blogPhoto" />
-              <div class="blogCardDescription">
-                <div class="blogTitleAndDecsriptionWrapper">
-                  <h3>Индия ... летим?</h3>
-                  <p>Для современного мира базовый.</p>
-                </div>
-                <div class="blogFooter">
-                  <p class="blogDate">01/04/2023</p>
-                  <a class="blogLink" href="#">читать статью</a>
-                </div>
-              </div>
-            </div>
-          </div>
+<?php
+}
+
+wp_reset_postdata();
+
+// сброс
+?>
+
+
+</div>
           <button>Другие материалы</button>
         </div>
       </section>
