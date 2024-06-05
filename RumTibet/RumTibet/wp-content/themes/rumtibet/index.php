@@ -5,25 +5,19 @@
           <div class="exloreImgContainer">
             <img
               class="positionAbsolute"
-              src="<?= bloginfo(
-                  'template_url'
-              ) ?>/assets/images/img1.66af520e3b2143d4a5db.png"
+              src="<?php the_field('about_travel_img1'); ?>"
               alt="explore"
             />
-            <img src="<?= bloginfo(
-                'template_url'
-            ) ?>/assets/images/img2.5f1864cb4f466b11fadd.png" alt="explore" />
+            <img src="<?php the_field('about_travel_img2'); ?>" alt="explore" />
           </div>
           <div class="exploreDescription">
             <div class="exploreDescriptionWrapper">
-              <p class="exploreSubtitle">о нашем походе</p>
-              <h2>Исследуйте все горные массивы мира вместе с нами</h2>
+              <p class="exploreSubtitle"><?php the_field(
+                  'about_travel_title'
+              ); ?></p>
+              <h2><?php the_field('about_travel_subTitle'); ?></h2>
               <p>
-                Его корни уходят в один фрагмент классической латыни 45 года
-                н.э., то есть более двух тысячелетий назад. Ричард МакКлинток,
-                профессор латыни из колледжа Hampden-Sydney, штат Вирджиния,
-                взял одно из самых странных слов в Lorem Ipsum, "consectetur"и
-                занялся его поисками в классической латинской литературе.
+               <?php the_field('about_travel_description'); ?>
               </p>
               <button>Программа тура</button>
             </div>
