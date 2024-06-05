@@ -85,8 +85,8 @@
       </section>
       <section class="popular">
         <div class="popularContainer">
-          <p class="popularSubtitle">по версии отдыхающих</p>
-          <h2 class="popularTitle">Популярные направления</h2>
+          <p class="popularSubtitle"><?php the_field('popularDestinations_title'); ?></p>
+          <h2 class="popularTitle"><?php the_field('popularDestinations_subTitle'); ?></h2>
           <div class="popularCardWrapper">
             <div
               class="card"
