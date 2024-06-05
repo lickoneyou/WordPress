@@ -28,7 +28,9 @@
         <div class="offerContainer">
           <div class="offerDescriptionWrapper">
             <p class="offerSubtitle"><?php the_field('our_offer_title'); ?></p>
-            <h2 class="offerTitle"><?php the_field('our_offer_subtitle'); ?></h2>
+            <h2 class="offerTitle"><?php the_field(
+                'our_offer_subtitle'
+            ); ?></h2>
             <p class="offerDescription">
               <?php the_field('our_offer_description'); ?>
             </p>
@@ -85,8 +87,12 @@
       </section>
       <section class="popular">
         <div class="popularContainer">
-          <p class="popularSubtitle"><?php the_field('popularDestinations_title'); ?></p>
-          <h2 class="popularTitle"><?php the_field('popularDestinations_subTitle'); ?></h2>
+          <p class="popularSubtitle"><?php the_field(
+              'popularDestinations_title'
+          ); ?></p>
+          <h2 class="popularTitle"><?php the_field(
+              'popularDestinations_subTitle'
+          ); ?></h2>
           <div class="popularCardWrapper">
             <div
               class="card"
@@ -139,8 +145,8 @@
       </section>
       <section class="blog">
         <div class="blogContainer">
-          <p class="blogSubtitle">делимся впечатлениями</p>
-          <h2 class="blogTitle">Блог о путешествиях</h2>
+          <p class="blogSubtitle"><?php the_field('blog_title'); ?></p>
+          <h2 class="blogTitle"><?php the_field('blog_subTitle'); ?></h2>
           <div class="blogCardWrapper">
             <div class="blogCard">
               <img src="<?= bloginfo(
@@ -224,8 +230,8 @@
     </main>
     <section class="impression">
       <div class="impressionContainer">
-        <p class="impressionSubtitle">фото-отчет</p>
-        <h2 class="impressionTitle">Делимся впечатлениями</h2>
+        <p class="impressionSubtitle"><?php the_field('foto_title'); ?></p>
+        <h2 class="impressionTitle"><?php the_field('foto_subTitle'); ?></h2>
         <div class="impressionPhotoWrapper">
           <img src="<?= bloginfo(
               'template_url'
