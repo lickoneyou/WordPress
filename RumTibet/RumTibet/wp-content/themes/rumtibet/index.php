@@ -95,51 +95,51 @@ wp_reset_postdata();
               'popularDestinations_subTitle'
           ); ?></h2>
           <div class="popularCardWrapper">
-            <div
+
+          <?php
+          // параметры по умолчанию
+          $my_posts = get_posts([
+              'numberposts' => 3,
+              'category' => 'rest',
+              'orderby' => 'date',
+              'order' => 'DESC',
+              'include' => [],
+              'exclude' => [],
+              'meta_key' => '',
+              'meta_value' => '',
+              'post_type' => 'post',
+              'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+          ]);
+
+          global $post;
+
+          foreach ($my_posts as $post) {
+              setup_postdata($post); ?>
+<div
               class="card"
-              style="background-image: url(<?= bloginfo(
-                  'template_url'
-              ) ?>/assets/images/1.9f04e988984702f0ca20.png);"
+              style="background-image: url(<?php the_field('rest_img'); ?>);"
             >
-              <div class="rate"><span>4.9</span></div>
+              <div class="rate"><span><?php the_field(
+                  'rest_rate'
+              ); ?></span></div>
               <div class="costWrapper">
                 <div class="cardTitle">
-                  <h3>Озеро возле гор</h3>
-                  <h4>романтическое приключение</h4>
+                  <h3><?php the_field('rest_title'); ?></h3>
+                  <h4><?php the_field('rest_subtitle'); ?></h4>
                 </div>
-                <p class="cost">480 $</p>
+                <p class="cost"><?php the_field('rest_cost'); ?></p>
               </div>
             </div>
-            <div
-              class="card"
-              style="background-image: url(<?= bloginfo(
-                  'template_url'
-              ) ?>/assets/images/2.6f7136023503046bc994.png);"
-            >
-              <div class="rate"><span>4.5</span></div>
-              <div class="costWrapper">
-                <div class="cardTitle">
-                  <h3>Ночь в горах</h3>
-                  <h4>в компании друзей</h4>
-                </div>
-                <p class="cost">500 $</p>
-              </div>
-            </div>
-            <div
-              class="card"
-              style="background-image: url(<?= bloginfo(
-                  'template_url'
-              ) ?>/assets/images/3.26c4824eca6856b9cccb.png);"
-            >
-              <div class="rate"><span>5.0</span></div>
-              <div class="costWrapper">
-                <div class="cardTitle">
-                  <h3>Йога в горах</h3>
-                  <h4>для тех, кто забоится о себе</h4>
-                </div>
-                <p class="cost">230 $</p>
-              </div>
-            </div>
+
+<?php
+          }
+
+          wp_reset_postdata();
+
+// сброс
+?>
+
+            
           </div>
           <button>Рейтинг направлений</button>
         </div>
