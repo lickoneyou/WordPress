@@ -35,45 +35,46 @@
               <?php the_field('our_offer_description'); ?>
             </p>
             <div class="descriptionProgramms">
-              <div class="programmsItem">
-                <img src="<?= bloginfo(
-                    'template_url'
-                ) ?>/assets/images/1.95be4eaf31ecda050d95.png" alt="programms" />
+
+<?php
+// параметры по умолчанию
+$my_posts = get_posts([
+    'numberposts' => -1,
+    'category' => 'programs',
+    'orderby' => 'date',
+    'order' => 'DESC',
+    'include' => [],
+    'exclude' => [],
+    'meta_key' => '',
+    'meta_value' => '',
+    'post_type' => 'post',
+    'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+]);
+
+global $post;
+
+foreach ($my_posts as $post) {
+    setup_postdata($post); ?>
+<div class="programmsItem">
+                <img src="<?php the_field(
+                    'program_icon'
+                ); ?>" alt="programms" />
                 <div class="descriptionWrapper">
-                  <h3>Опытный гид</h3>
+                  <h3><?php the_field('program_title'); ?></h3>
                   <p>
-                    Для современного мира базовый вектор развития предполагает
-                    независимые способы реализации соответствующих условий
-                    активизации.
+                    <?php the_field('program_descr'); ?>
                   </p>
                 </div>
               </div>
-              <div class="programmsItem">
-                <img src="<?= bloginfo(
-                    'template_url'
-                ) ?>/assets/images/2.3d817b87a484fcdcf852.png" alt="programms" />
-                <div class="descriptionWrapper">
-                  <h3>Безопасный поход</h3>
-                  <p>
-                    Для современного мира базовый вектор развития предполагает
-                    независимые способы реализации соответствующих условий
-                    активизации.
-                  </p>
-                </div>
-              </div>
-              <div class="programmsItem">
-                <img src="<?= bloginfo(
-                    'template_url'
-                ) ?>/assets/images/3.0f4f14fd3312ef2073f5.png" alt="programms" />
-                <div class="descriptionWrapper">
-                  <h3>Лояльные цены</h3>
-                  <p>
-                    Для современного мира базовый вектор развития предполагает
-                    независимые способы реализации соответствующих условий
-                    активизации.
-                  </p>
-                </div>
-              </div>
+ <?php
+}
+
+wp_reset_postdata();
+
+// сброс
+?>
+
+             
             </div>
           </div>
           <div class="offerImg">
